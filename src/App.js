@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import './App.css';
+//import './App.css';
 
 
 
@@ -30,15 +30,15 @@ return (
 
     <h1> Hello from Shafiq, Here are my Github Repositories</h1>
     <hr />
-    <ul>
+    <ol>
       {data.map(
         (repoObj)=>{
           return <li>
-            {repoObj.name}
+            {repoObj.name}   and you can clone from url :   " {repoObj.clone_url}"
           </li>
         }
       )}
-    </ul>
+    </ol>
 
 
 
